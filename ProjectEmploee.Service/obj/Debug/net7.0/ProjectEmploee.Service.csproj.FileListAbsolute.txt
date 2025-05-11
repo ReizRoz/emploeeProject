@@ -1,0 +1,17 @@
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.AssemblyInfo.cs
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\bin\Debug\net7.0\ProjectEmploee.Service.deps.json
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\bin\Debug\net7.0\ProjectEmploee.Service.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\bin\Debug\net7.0\ProjectEmploee.Service.pdb
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\bin\Debug\net7.0\ProjectEmploee.Core.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\bin\Debug\net7.0\ProjectEmploee.Core.pdb
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.csproj.CopyComplete
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\refint\ProjectEmploee.Service.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ProjectEmploee.Service.pdb
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\obj\Debug\net7.0\ref\ProjectEmploee.Service.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\bin\Debug\net7.0\ProjectEmploee.Data.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Service\bin\Debug\net7.0\ProjectEmploee.Data.pdb

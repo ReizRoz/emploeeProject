@@ -1,0 +1,17 @@
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.AssemblyInfo.cs
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\bin\Debug\net7.0\ProjectEmploee.Data.deps.json
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\bin\Debug\net7.0\ProjectEmploee.Data.runtimeconfig.json
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\bin\Debug\net7.0\ProjectEmploee.Data.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\bin\Debug\net7.0\ProjectEmploee.Data.pdb
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\bin\Debug\net7.0\ProjectEmploee.Core.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\bin\Debug\net7.0\ProjectEmploee.Core.pdb
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.csproj.CopyComplete
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\refint\ProjectEmploee.Data.dll
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.pdb
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ProjectEmploee.Data.genruntimeconfig.cache
+C:\Users\user1\Desktop\ProjectEmploee\ProjectEmploee.Data\obj\Debug\net7.0\ref\ProjectEmploee.Data.dll
