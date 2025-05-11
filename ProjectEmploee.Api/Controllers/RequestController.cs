@@ -14,7 +14,7 @@ namespace ProjectEmploee.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize(Roles = "SystemAdministrator")]
+    [Authorize(Roles = "SystemAdministrator")]
 
 
     public class RequestController : ControllerBase

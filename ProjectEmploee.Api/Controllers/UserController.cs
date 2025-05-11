@@ -13,7 +13,7 @@ namespace ProjectEmploee.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize(Roles="SystemAdministrator")]
+    [Authorize(Roles="SystemAdministrator")]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userServices;

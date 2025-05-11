@@ -12,7 +12,7 @@ namespace ProjectEmploee.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize(Roles = "SystemAdministrator, Admin, Emploee")]
+    [Authorize(Roles = "SystemAdministrator, Admin, Emploee")]
     public class AttendanceController : ControllerBase
     {
         private readonly IAttendanceService _attendanceService;
