@@ -39,18 +39,20 @@ public class AttendanseService : IAttendanceService
     {
         var attendancePost = await _repositoryManager.Attendance.PostAsync(a);
         var at = _mapper.Map<AttendanceDTO>(attendancePost);
-        await _repositoryManager.Save();
+       await _repositoryManager.Save();
         return at;
     }
 
 
     public async Task<AttendanceDTO> PutAsync(int id, Attendance a)
-    {
+    {a.IdAttendance = id;
         var attendancePut = await _repositoryManager.Attendance.PutAsync(id, a);
+        if (attendancePut == null)
+            throw new Exception($"attendance with ID {id} not found.");
         var at = _mapper.Map<AttendanceDTO>(attendancePut);
+        await _repositoryManager.Save();
         return at;
      }
-
 
     public async Task DeleteAsync(int id)
     {

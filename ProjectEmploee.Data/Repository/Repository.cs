@@ -11,13 +11,11 @@ namespace ProjectEmploee.Data.Repository
 
         public class Repository<T> : IRepository<T> where T : class
         {
-        private readonly DataContext _context;
-        protected readonly DbSet<T> _dbSet;
+            protected readonly DbSet<T> _dbSet;
 
             public Repository(DataContext context)
             {
-            _context = context;
-            _dbSet = context.Set<T>();
+                _dbSet = context.Set<T>();
             }
             public async Task<T> PostAsync(T entity)
             {
@@ -45,16 +43,20 @@ namespace ProjectEmploee.Data.Repository
                 return t;
             }
 
-        public async Task<T> PutAsync(int id, T entity)
-        {
-            var existing = await _dbSet.FindAsync(id);
-            if (existing == null)
-                throw new Exception($"Entity with ID {id} not found.");
+            public async Task<T> PutAsync(int id, T entity)
+            {
+                var tUpdete = await _dbSet.FindAsync(id);  // חיפוש ישות לפי ID
+                if (tUpdete == null)
+                {
+                    throw new Exception($"Entity with ID {id} not found.");  // זריקת שגיאה אם לא נמצא
+                }
 
-            _context.Entry(existing).CurrentValues.SetValues(entity);
-            return existing;
-        }
-        public async Task DeleteAsync(int id)
+                // עדכון כל הערכים של הישות הקיימת עם הערכים של הישות החדשה
+                _dbSet.Entry(tUpdete).CurrentValues.SetValues(entity);
+            
+            return tUpdete;
+            }
+            public async Task DeleteAsync(int id)
             {
                 var tDelete = await GetByIdAsync(id);
                 if (tDelete == null)

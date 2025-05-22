@@ -51,12 +51,15 @@ namespace ProjectEmploee.Service
 
 
         public async Task<RequestDTO> PutAsync(int id, Request r)
-        {
+        {    r.IdRequesr = id;
             var requestPut = await _repositoryManager.Request.PutAsync(id, r);
+            if (requestPut == null)
+                throw new Exception($"request with ID {id} not found.");
             var re = _mapper.Map<RequestDTO>(requestPut);
+            await _repositoryManager.Save();
             return re;
-
         }
+
 
         public async Task DeleteAsync(int id)
         {

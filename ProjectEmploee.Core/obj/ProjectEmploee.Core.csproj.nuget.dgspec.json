@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj": {}
+    "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj": {
+    "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj",
         "projectName": "ProjectEmploee.Core",
-        "projectPath": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Core\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",

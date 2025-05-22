@@ -3674,11 +3674,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Api\\ProjectEmploee.Api.csproj",
+      "projectUniqueName": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Api\\ProjectEmploee.Api.csproj",
       "projectName": "ProjectEmploee.Api",
-      "projectPath": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Api\\ProjectEmploee.Api.csproj",
+      "projectPath": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Api\\ProjectEmploee.Api.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Api\\obj\\",
+      "outputPath": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3696,14 +3696,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj": {
-              "projectPath": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj"
+            "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj": {
+              "projectPath": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Core\\ProjectEmploee.Core.csproj"
             },
-            "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Data\\ProjectEmploee.Data.csproj": {
-              "projectPath": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Data\\ProjectEmploee.Data.csproj"
+            "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Data\\ProjectEmploee.Data.csproj": {
+              "projectPath": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Data\\ProjectEmploee.Data.csproj"
             },
-            "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Service\\ProjectEmploee.Service.csproj": {
-              "projectPath": "C:\\Users\\user1\\Desktop\\projectEmploee\\ProjectEmploee.Service\\ProjectEmploee.Service.csproj"
+            "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Service\\ProjectEmploee.Service.csproj": {
+              "projectPath": "C:\\Users\\user1\\Desktop\\ProjectEmploee\\ProjectEmploee.Service\\ProjectEmploee.Service.csproj"
             }
           }
         }

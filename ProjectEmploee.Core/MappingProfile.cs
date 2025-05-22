@@ -17,8 +17,7 @@ namespace ProjectEmploee.Core
             CreateMap<Request, RequestDTO>().ReverseMap();
             CreateMap<User, UserDTO>().ReverseMap();
             CreateMap<UserPostDTO, User>()
-    .ForMember(dest => dest.IdUser, opt => opt.Ignore())
-    .ReverseMap();
+       .ForMember(dest => dest.IdUser, opt => opt.Ignore()); // התעלם משדה המזהה בעת מיפוי
 
         }
     }

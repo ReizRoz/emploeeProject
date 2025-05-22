@@ -49,36 +49,33 @@ namespace ProjectEmploee.Service
         }
 
 
-       /* public async Task<UserDTO> PutAsync(int id, User u)
-         {
-             var userPut = await _userRepository.PutAsync(id, u);
+        /* public async Task<UserDTO> PutAsync(int id, User u)
+          {
+              var userPut = await _userRepository.PutAsync(id, u);
 
-             var us = _mapper.Map<UserDTO>(userPut);
-        await _repositoryManager.Save();
-             return us;
+              var us = _mapper.Map<UserDTO>(userPut);
+         await _repositoryManager.Save();
+              return us;
 
-         }*/
-        
+          }*/
+
         public async Task<UserDTO> PutAsync(int id, User u)
         {
-            var existing = await _userRepository.GetByIdAsync(id);
+            u.IdUser = id;
+            var existing = await _userRepository.PutAsync(id,u);
             if (existing == null)
                 throw new Exception($"User with ID {id} not found.");
-
-            // מפה את הערכים מ-u לתוך existing
-            _mapper.Map(u, existing); // ← מוודא שלא ממפה את IdUser
-
             await _repositoryManager.Save();
             return _mapper.Map<UserDTO>(existing);
         }
 
         public async Task DeleteAsync(int id)
-            {
-                await _userRepository.DeleteAsync(id);
-                await _repositoryManager.Save();
-            }
+        {
+            await _userRepository.DeleteAsync(id);
+            await _repositoryManager.Save();
         }
     }
+}
 
 
 

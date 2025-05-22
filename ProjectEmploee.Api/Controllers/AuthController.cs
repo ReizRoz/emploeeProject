@@ -14,7 +14,7 @@ namespace ProjectEmploee.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-  
+    [Authorize(Roles = "SystemAdministrator, Admin, Emploee")]
     public class AuthController : ControllerBase
     {
         private readonly IConfiguration _configuration;
