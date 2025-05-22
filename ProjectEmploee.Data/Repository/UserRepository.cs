@@ -11,9 +11,8 @@ namespace ProjectEmploee.Data.Repository
 {
     public class UserRepository:Repository<User>,IUserRepository
     {
-        public UserRepository(DataContext context) : base(context)
-        {
-        }
+        public UserRepository(DataContext context) : base(context){ }
+
        public async Task<User> GetByNameAsync(string name)
         {
             var u = await _dbSet.FirstOrDefaultAsync(u => u.Name == name);

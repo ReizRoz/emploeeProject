@@ -6,7 +6,6 @@ using ProjectEmploee.Core.Entities;
 using ProjectEmploee.Core.Services;
 using ProjectEmploee.Service;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ProjectEmploee.Api.Controllers
 {
@@ -24,7 +23,7 @@ namespace ProjectEmploee.Api.Controllers
             _mapper = mapper;
         }
 
-        // GET: api/<AttendanceController>
+   
         [HttpGet]
         public async Task<ActionResult> GetAllAsync()
         {
@@ -32,7 +31,7 @@ namespace ProjectEmploee.Api.Controllers
             return Ok(AttendanceAll);
         }
 
-        // GET api/<AttendanceController>/5
+    
         [HttpGet("{id}")]
         public async Task<ActionResult> GetByIdAsync(int id)
         {
@@ -41,13 +40,14 @@ namespace ProjectEmploee.Api.Controllers
         }
 
     
-        // GET api/<RequestController>/5
         [HttpPost]
         public async Task<ActionResult> PostAsync([FromBody] AttendanceDTO a)
            {var attendance = _mapper.Map<Attendance>(a);
             var newAttendance = await _attendanceService.PostAsync(attendance);
             return Ok(newAttendance);
         }
+
+
         [HttpPut("{id}")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] AttendanceDTO a)
         {
@@ -56,7 +56,7 @@ namespace ProjectEmploee.Api.Controllers
             return Ok(attendancePut);
         }
 
-        // DELETE api/<UserController>/5
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

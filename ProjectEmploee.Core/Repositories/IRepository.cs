@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectEmploee.Core.Repositories
 {
-    public interface IRepository<T> where T : class//לבדוק מה זה אומר
+    public interface IRepository<T> where T : class
     {
         Task<IEnumerable<T>> GetAllAsync(Func<IQueryable<T>, IQueryable<T>>? include = null);
 

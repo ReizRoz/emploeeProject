@@ -7,8 +7,6 @@ using ProjectEmploee.Core.Enum;
 using ProjectEmploee.Core.Services;
 using System.Data;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace ProjectEmploee.Api.Controllers
 {
     [Route("api/[controller]")]
@@ -23,7 +21,8 @@ namespace ProjectEmploee.Api.Controllers
             _userServices = userServices;
             _mapper = mapper;
         }
-        // GET: api/<UserController>
+
+
         [HttpGet]
         public async Task<ActionResult> GetAllAsync()
         {
@@ -31,19 +30,23 @@ namespace ProjectEmploee.Api.Controllers
             return Ok(userAll);
         }
 
-        // PUT api/<UserController>/5
+
         [HttpGet("IdUser/{id}")]
         public async Task<ActionResult> GetByIdAsync(int id)
         {
             var userById = await _userServices.GetByIdAsync(id);
             return Ok(userById);
         }
+
+
         [HttpGet("Name/{name}")]
         public async Task<ActionResult> GetByNameAsync(string name)
         {
             var userByName = await _userServices.GetByNameAsync(name);
             return Ok(userByName);
         }
+
+
         [HttpPost]
         public async Task<ActionResult> PostAsync([FromBody] UserPostDTO u)
         {
@@ -53,6 +56,7 @@ namespace ProjectEmploee.Api.Controllers
             return Ok(newUser);
         }
 
+
         [HttpPut("{id}")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] UserPostDTO u)
         {
@@ -61,7 +65,7 @@ namespace ProjectEmploee.Api.Controllers
             return Ok(userPut);
         }
 
-        // DELETE api/<UserController>/5
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

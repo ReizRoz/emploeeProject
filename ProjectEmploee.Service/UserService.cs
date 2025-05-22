@@ -19,6 +19,8 @@ namespace ProjectEmploee.Service
             _mapper = Mapper;
             _repositoryManager = repositoryManager;
         }
+
+
         public async Task<IEnumerable<UserDTO>> GetAllAsync()
         {
             var userAll = await _userRepository.GetAllAsync(query =>
@@ -34,11 +36,14 @@ namespace ProjectEmploee.Service
             var us = _mapper.Map<UserDTO>(userById);
             return us;
         }
+
+
         public async Task<User> GetByNameAsync(string name)
         {
             var userByName = await _userRepository.GetByNameAsync(name);
             return userByName;
         }
+
 
         public async Task<UserDTO> PostAsync(User u)
         {
@@ -49,25 +54,16 @@ namespace ProjectEmploee.Service
         }
 
 
-        /* public async Task<UserDTO> PutAsync(int id, User u)
-          {
-              var userPut = await _userRepository.PutAsync(id, u);
-
-              var us = _mapper.Map<UserDTO>(userPut);
-         await _repositoryManager.Save();
-              return us;
-
-          }*/
-
         public async Task<UserDTO> PutAsync(int id, User u)
         {
             u.IdUser = id;
-            var existing = await _userRepository.PutAsync(id,u);
+            var existing = await _userRepository.PutAsync(id, u);
             if (existing == null)
                 throw new Exception($"User with ID {id} not found.");
             await _repositoryManager.Save();
             return _mapper.Map<UserDTO>(existing);
         }
+
 
         public async Task DeleteAsync(int id)
         {

@@ -10,8 +10,11 @@ namespace ProjectEmploee.Core.Repositories
     public interface IRepositoryManager
     {
         IRepository<Attendance> Attendance { get; }
+
         IRepository<Request> Request { get; }
+
         IUserRepository User { get; }
+
         Task Save();
     }
 }

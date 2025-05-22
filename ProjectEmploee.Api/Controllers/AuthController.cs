@@ -20,7 +20,6 @@ namespace ProjectEmploee.Api.Controllers
         private readonly IConfiguration _configuration;
         private readonly IUserService _userServices;
 
-
         public AuthController(IConfiguration configuration, IUserService userServices)
         {
             _configuration = configuration;

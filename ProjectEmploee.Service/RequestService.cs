@@ -23,11 +23,11 @@ namespace ProjectEmploee.Service
             _repositoryManager = repositoryManager;
             _mapper = Mapper;
         }
+
+
         public async Task<IEnumerable<RequestDTO>> GetAllAsync()
         {
-            var requestAll = await _repositoryManager.Request.GetAllAsync(//query =>
-        //query.Include(r=>r.User)
-        );//לא עשיתי ונקלוד
+            var requestAll = await _repositoryManager.Request.GetAllAsync();
             var re = _mapper.Map<IEnumerable<RequestDTO>>(requestAll);
             return re;
         }
@@ -51,7 +51,8 @@ namespace ProjectEmploee.Service
 
 
         public async Task<RequestDTO> PutAsync(int id, Request r)
-        {    r.IdRequesr = id;
+        {
+            r.IdRequesr = id;
             var requestPut = await _repositoryManager.Request.PutAsync(id, r);
             if (requestPut == null)
                 throw new Exception($"request with ID {id} not found.");

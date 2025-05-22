@@ -14,11 +14,14 @@ public class AttendanseService : IAttendanceService
 {
     private readonly IRepositoryManager _repositoryManager;
     private readonly IMapper _mapper;
+
     public AttendanseService(IRepositoryManager repositoryManager, IMapper Mapper)
     {
         _repositoryManager=repositoryManager;
         _mapper = Mapper;
     }
+
+
     public async Task<IEnumerable<AttendanceDTO>> GetAllAsync()
     {
         var attendanceAll = await _repositoryManager.Attendance.GetAllAsync();

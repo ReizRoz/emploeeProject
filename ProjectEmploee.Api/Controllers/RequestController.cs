@@ -8,8 +8,6 @@ using ProjectEmploee.Core.Services;
 using ProjectEmploee.Service;
 using System.Data;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace ProjectEmploee.Api.Controllers
 {
     [Route("api/[controller]")]
@@ -26,7 +24,8 @@ namespace ProjectEmploee.Api.Controllers
             _requstService = requestService;
             _mapper = mapper;
         }
-        // GET: api/<RequestController>
+
+
         [HttpGet]
         public async Task<ActionResult> GetAllAsync()
         {
@@ -35,8 +34,6 @@ namespace ProjectEmploee.Api.Controllers
         }
 
 
-
-        // GET api/<RequestController>/5
         [HttpGet("{id}")]
         public async Task<ActionResult> GetByIdAsync(int id)
         {
@@ -45,8 +42,6 @@ namespace ProjectEmploee.Api.Controllers
         }
 
 
-
-        // POST api/<RequestController>
         [HttpPost]
         public async Task<ActionResult> PostAsync([FromBody] RequestDTO r)
         {
@@ -56,7 +51,6 @@ namespace ProjectEmploee.Api.Controllers
         }
 
 
-        // PUT api/<RequestController>/5
         [HttpPut("{id}")]
         public async Task<ActionResult> PutAsync(int id, [FromBody] RequestDTO r)
         {
@@ -65,7 +59,7 @@ namespace ProjectEmploee.Api.Controllers
             return Ok(requestPut);
         }
 
-        // DELETE api/<RequestController>/5
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

@@ -8,15 +8,12 @@ using System.Threading.Tasks;
 
 namespace ProjectEmploee.Data.Repository
 {
-
     public class RepositoryManager : IRepositoryManager
     {
         private readonly DataContext _context;
         public IRepository<Attendance> Attendance { get; }
         public IRepository<Request> Request { get; }
         public IUserRepository User { get; }
-
-
 
         public RepositoryManager(DataContext context, IRepository<Attendance> AttendanceRepository,
             IRepository<Request> RequestRepository, IUserRepository userRepository)
